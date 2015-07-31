@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 
-get '/:nombre' do
+get '/makers/:nombre' do
 @name= params[:nombre].capitalize
 erb :home
 end
